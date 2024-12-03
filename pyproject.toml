@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "glossa"
+version = "0.1.0"
+description = "Foreign language learning"
+license = "MIT"
+authors = ["Alan <alanjponte@gmail.com>"]
+maintainers = ["Alan <alanjponte@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+[tool.poetry.group.dev.dependencies]
+black = "*"
+mypy = "*"
+pre-commit = "*"
+ruff = "*"
+
+[tool.poetry.group.test.dependencies]
+coverage = "*"
+pytest = "*"
+pytest-cov = "*"
+pytest-django = "*"
+tox = "*"
+
+[tool.poetry.extras]
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
